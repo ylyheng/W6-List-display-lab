@@ -1,14 +1,9 @@
-import pnLogo from "./assets/pn-logo.png";
-
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <header id="header">
-        <img src={pnLogo} alt="PN Logo" />
-        <h1>Students results for (fake batch name))</h1>
-      </header>
-
+      <Header batchName="fake batch name" />
       <main className="scores-container">
         <div class="scores">
           <h1>Fake Course</h1>
