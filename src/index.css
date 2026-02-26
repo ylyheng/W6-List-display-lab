@@ -91,9 +91,10 @@ body {
 }
 
 .scores table {
-  table-layout: fixed;
-  border-spacing: 0.5rem;
-  text-align: right;
+  width: 100%;
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 0.45rem 0.35rem;
 }
 
 .scores thead {
@@ -101,11 +102,47 @@ body {
   color: var(--white-color);
 }
 
+.scores th {
+  text-align: center;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .scores tbody {
   font-size: 1rem;
   color: var(--grey-color);
 }
 
+.scores td {
+  text-align: center;
+}
+
 .warning {
   color: var(--secondary-color);
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.75rem 0.5rem 0.35rem;
+  padding: 0.55rem 0.25rem;
+  background: var(--white-color);
+  border-radius: 10px;
+}
+
+.statistics div {
+  text-align: center;
+}
+
+.statistics p {
+  margin: 0;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+.statistics strong {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #5a5a5a;
 }

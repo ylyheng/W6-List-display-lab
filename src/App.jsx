@@ -10,7 +10,7 @@ import {
 function App() {
   return (
     <>
-      <Header batchName="fake batch name" />
+      <Header batchName="PNC batch 2024" />
       <main className="scores-container">
           <Scores courseName="HTML" courseResults={HTML_RESULTS} />
           <Scores courseName="Java" courseResults={JAVA_RESULTS} />
